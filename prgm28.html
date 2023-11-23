@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 ShakeAnimation</title>
+<style>
+  .box{
+     background-color:red;
+     margin:50px;
+     width:100px;
+     height:100px;
+     position:relative;
+     left:0;
+     animation:repeatit 5s linear 0s infinite alternate;
+   }
+
+/*Standard syntax*/
+@keyframes repeatit{
+12.5%{left:50px;}
+25%{left:-50px;}
+37.5{left:-25px;}
+50%{left:25px;}
+62.5%left:-10px;}
+75%{left:10%;}
+}
+</style>
+</head>
+<body>
+<div class="box">Purnima</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Infinite translate Animation</title>
+<style>
+  .box{
+     background-color:magenta;
+     margin:50px;
+     width:100px;
+     height:100px;
+     position:relative;
+     animation:repeatit 2s linear 0s infinite alternate;
+    }
+
+/*Standard syntax*/
+@keyframes repeatit{
+from{left:0;}
+to{left:50%;}
+}
+</style>
+</head>
+<body>
+  <div class="box">h1</div>
+</body>
+</html>

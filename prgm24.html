@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>demo</title>
+<meta charset="UTF-8">
+<style>
+.item1{grid-area:header;}
+.item2{grid-area:menu;}
+.item3{grid-area:main;}
+.item4{grid-area:right;}
+.item5{grid-area:footer;}
+.grid-container{
+  display:grid;
+  grid-template-areas:
+   'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+   gap:30px;
+ background-color:#47EE0D;
+ padding:30px;
+}
+.grid-container>div{
+ background-color:rgba(255,255,255,0.8);
+ text-align:center;
+ padding:20px;
+ font-size:30px;
+}
+a
+{
+ text-decoration:none;
+}
+a:hover
+{
+ background-color:red;
+}
+</style>
+</head>
+<body>
+<h1>GRID LAYOUT</h1>
+<p>This grid contains three rows and three columns</p>
+<div class="grid-container">
+<div class="item1">NIPUNA</div>
+<div class="item2">TECHNOLOGIES</div>
+<a href="/director.html">DIRECTOR</a><br><br>
+
+<div class="item3">JAVA</div>
+<div class="item4">HTML</div>
+<div class="item5">CSS</div>
+</div>
+</body>
+</html>
+
+
+
+ 

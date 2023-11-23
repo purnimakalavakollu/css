@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of css3 Shake Animation</title>
+<style>
+  .box{
+        background-color:pink;
+        margin:50px;
+        width:120px;
+        height:110px;
+        position:relative;
+        left:0;
+        animation:Shakeit 2s linear 0s infinite alternate;
+      }
+
+ /* Standard syntax*/
+@keyframes Shakeit{
+12.5%{left:-50px; background-color:red;}
+25%{left:-50px; background-color:blue;}
+37.5%{left:-25px; background-color:green;}
+50%{left:25px; background-color:pink;}
+62.5%{left:-10px; background-color:yellow;}
+75%{left:10px; background-color:orange;}
+}
+</style>
+</head>
+<body>
+ <div class="box"></div>
+</body>
+</html>
